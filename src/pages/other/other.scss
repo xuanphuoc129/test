@@ -1,0 +1,22 @@
+page-other {
+    ion-content.content {
+        background: rgba($color: #000000, $alpha: 0.6);
+    }
+    .scroll-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 0 !important;
+    }
+    .containter {
+        background: white;
+        padding: 16px;
+        animation-duration: 300ms;
+        margin: 16px;
+        .button {
+            border-radius: 20px;
+        }
+    }
+}

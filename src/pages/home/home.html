@@ -1,0 +1,17 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Bistro-dancer</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-list no-lines>
+        <button ion-item *ngFor="let item of list" (click)="goToDetail(item)">
+            <ion-icon item-start name="contact"></ion-icon>
+            <ion-label>User: {{item.username}}</ion-label>
+        </button>
+    </ion-list>
+    <ion-fab bottom right>
+        <button ion-fab mini (click)="showModal()"><ion-icon name="add"></ion-icon></button>
+    </ion-fab>
+</ion-content>
